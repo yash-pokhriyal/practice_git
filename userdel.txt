@@ -1,0 +1,10 @@
+#!/bin/bash
+
+<<help
+Deleting user
+help
+
+read -p "Enter the user you want to dlt:"  user
+sudo userdel "$user"
+
+echo "=====Deletion complete========"
